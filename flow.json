@@ -1,0 +1,27 @@
+{
+	"contracts": {
+		"HelloWorld": {
+			"source": "./cadence/contracts/HelloWorld.cdc",
+			"aliases": {
+				"emulator": "0xf8d6e0586b0a20c7"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"fromFile": "./emulator.private.json"
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"HelloWorld"
+			]
+		}
+	}
+}
