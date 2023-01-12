@@ -32,7 +32,7 @@ In one terminal, run emulator:
 flow emulator start
 ```
 
-Once emulator is running, grab the private key and update the `.env` file.
+Once emulator is running, grab the private key and update the `.env` file. Also, make sure to add this to .gitignore.
 
 Then, in another terminal, run Dev Wallet:
 
